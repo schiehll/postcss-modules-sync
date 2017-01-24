@@ -38,7 +38,8 @@ const css = `
 let exportedTokens = {}
 const styles = postcss([
   CSSModulesSync({
-    getTokens: tokens => exportedTokens = tokens
+    generateScopedName: '[path][local]-[hash:base64:10]',
+    getJSON: tokens => exportedTokens = tokens
   })
 ]).process(css).css
 
