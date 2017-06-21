@@ -13,6 +13,7 @@ npm install postcss-modules-sync
 ## Example
 ```js
 import CSSModulesSync from 'postcss-modules-sync'
+// const CSSModulesSync = require('postcss-modules-sync').default
 import postcss from 'postcss'
 
 const css = `
